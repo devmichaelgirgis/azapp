@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/leaderboard_item_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:padding="@dimen/_2sdp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.exceedgulf.alainzoo.views.RoundedImageView
+                        android:id="@+id/leaderboard_item_ivPlaceHolder"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:contentDescription="@string/application_name"
+                        android:src="@mipmap/ic_launcher_round"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/colorplaceholder"
+                        app:civ_border_width="@dimen/_2sdp" />
+
+                    <com.exceedgulf.alainzoo.views.RoundedImageView
+                        android:id="@+id/leaderboard_item_ivProfileImage"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:contentDescription="@string/application_name"
+                        android:tint="@color/white"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/colorplaceholder"
+                        app:civ_border_width="@dimen/_2sdp" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/leaderboard_item_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abdul-Qader"
+                    android:textColor="@color/brownish_grey_three"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/leaderboard_item_tvPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="5482 Points"
+                    android:textColor="@color/brownish_grey_three"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:background="@color/white_line_dialog" />
+    </LinearLayout>
+</layout>

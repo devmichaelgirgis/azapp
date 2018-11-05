@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cool_blue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="center_vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/language_ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:rotation="180"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_blue_back" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/language_tvHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:gravity="start"
+                    android:text="@string/LANGUAGE"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25ssp"
+                    app:fontFamily="@string/cross_town" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/splash_header_auto_mirrored" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_40sdp">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/language_tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/langTitle"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/slate_grey"
+                android:textSize="@dimen/_16ssp"
+                app:fontFamily="@string/avenir_next_medium"
+                tools:text="@string/langTitle" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/language_tvSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/langSubTitle"
+                android:textAlignment="viewStart"
+                android:textColor="@color/cool_grey_two"
+                android:textSize="@dimen/_11ssp"
+                app:fontFamily="@string/avenir_next_regular" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_64sdp"
+            android:background="@color/slate_grey" />
+
+        <LinearLayout
+            android:id="@+id/language_llEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lang1_title"
+                android:textAlignment="viewStart"
+                android:textColor="@color/slate_grey"
+                android:textSize="@dimen/_16ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/lang1"
+                android:textAlignment="viewStart"
+                android:textColor="@color/slate_grey"
+                android:textSize="@dimen/_11ssp"
+                app:fontFamily="@string/avenir_next_regular" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/slate_grey" />
+
+        <LinearLayout
+            android:id="@+id/language_llArabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:padding="@dimen/_16sdp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/lan_tvArtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lang2_title"
+                android:textAlignment="viewEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/slate_grey"
+                android:textSize="@dimen/_16ssp" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/lan_tvArSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/lang2"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/slate_grey"
+                android:textSize="@dimen/_10ssp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/slate_grey" />
+    </LinearLayout>
+
+
+</layout>

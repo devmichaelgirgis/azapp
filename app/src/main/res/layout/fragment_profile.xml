@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_eggplant"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/frProfile_ivEdit"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_edit_profile" />
+
+
+                <com.exceedgulf.alainzoo.views.RoundedImageView
+                    android:id="@+id/nav_ivuserprofilepic"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/white_badge_text"
+                    app:civ_border_width="@dimen/_2sdp"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/frProfile_ivLogout"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_logout" />
+
+            </LinearLayout>
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/frProfile_tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:textColor="@color/white"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_14ssp"
+                app:fontFamily="@string/avenir_next_medium"
+                tools:text="Mosab alawad" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_leaderboard_bg"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/light_eggplant"
+            app:srcCompat="@drawable/header_main_home" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_leaderboard_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/_10sdp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/frProfile_ivinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:srcCompat="@drawable/ic_tres_info"
+                app:tint="@color/reddish" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@color/white_leaderboard_bg"
+                android:text="@string/badges_earned"
+                android:textAlignment="viewStart"
+                android:textColor="@color/brownish_grey_three"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="invisible"
+                app:fontFamily="@string/avenir_next_medium" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/frProfile_tvLeaderboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:autoLink="all"
+                android:drawableEnd="@drawable/ic_next_profile"
+                android:drawablePadding="@dimen/_3sdp"
+                android:linksClickable="false"
+                android:paddingEnd="@dimen/_10sdp"
+                android:selectAllOnFocus="false"
+                android:text="@string/leaderboard"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/reddish"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+
+        </LinearLayout>
+
+        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+            android:id="@+id/frProfile_rvBadges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_leaderboard_bg"
+            android:paddingStart="@dimen/_5sdp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/white_leaderboard_bg"
+            app:srcCompat="@drawable/header_main_home" />
+
+        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+            android:id="@+id/frProfile_rvUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/white"
+            android:paddingStart="@dimen/_10sdp" />
+
+    </LinearLayout>
+</layout>

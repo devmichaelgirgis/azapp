@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="scale_x_parent">1</integer>
+    <integer name="rotation_90">90</integer>
+    <integer name="rotation_180">180</integer>
+    <integer name="rotation_270">270</integer>
+    <integer name="rotation_viewpager_180">0</integer>
+</resources>

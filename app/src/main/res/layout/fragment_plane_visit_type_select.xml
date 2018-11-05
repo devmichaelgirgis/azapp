@@ -1,0 +1,165 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.PlaneVisitTypeSelectFragment">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_30sdp">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/frplanselec_tvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_15ssp"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:text="@string/select_the_plan_your_visit" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:text="@string/these_plans_ensure_you_make_the_most_out_of_your_visit"
+                    android:textColor="@color/colorAddAnimalText"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+                <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                    android:id="@+id/frAddAnimal_rvplanes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="@dimen/_55sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_5sdp" />
+
+                <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                    android:id="@+id/fr_ani_rvfilteAnimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:clipToPadding="false"
+                    android:nestedScrollingEnabled="false"
+                    android:paddingBottom="@dimen/_55sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/fr_ani_llDOne"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_plan_btn"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:fontFamily="@string/avenir_next_regular"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/frPlanVisit_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_ani_tvEmptyViewFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_12sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:fontFamily="@string/cross_town" />
+
+        <LinearLayout
+            android:id="@+id/fr_ani_llfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fr_ani_rvfilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:background="@color/cool_blue"
+                    android:overScrollMode="never"
+                    android:visibility="visible" />
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/frPlanVisit_ivziczac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/application_name"
+                android:scaleType="fitXY"
+                android:tint="@color/cool_blue"
+                app:srcCompat="@drawable/header_main_home" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

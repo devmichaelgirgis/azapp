@@ -1,0 +1,42 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context="com.exceedgulf.alainzoo.fragments.HappeningNowFragment">
+
+        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+            android:id="@+id/rv_happening_now"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_16sdp"
+            android:clipToPadding="false"
+            android:background="@color/white"
+            android:overScrollMode="never" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_hpn_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/light_grey_blue"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

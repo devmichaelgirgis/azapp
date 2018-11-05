@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_hint_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/wow"
+        android:textColor="@color/colorTresurhunt"
+        android:textSize="@dimen/_26ssp"
+        app:fontFamily="@string/cross_town" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_hint_tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/you_found_the_clue"
+        android:textColor="@color/colorTresurhunt"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="@string/avenir_next_medium" />
+
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_hint_tvHintMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="hint"
+        android:textColor="@color/colorTresurhunt"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="@string/avenir_next_regular" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_hint_tvCollect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_red_corner_edt"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="Collect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="@string/avenir_next_medium" />
+
+
+</LinearLayout>

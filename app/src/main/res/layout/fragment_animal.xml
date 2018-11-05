@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+            android:id="@+id/fr_ani_rvmain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp" />
+
+        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+            android:id="@+id/fr_ani_rvfilteAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/_8sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:visibility="gone" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_ani_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_ani_tvEmptyViewFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone"
+            app:fontFamily="@string/cross_town" />
+
+        <LinearLayout
+            android:id="@+id/fr_ani_llfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fr_ani_rvfilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:background="@color/camo"
+                    android:overScrollMode="never"
+                    android:visibility="visible" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/application_name"
+                android:scaleType="fitXY"
+                android:tint="@color/camo"
+                app:srcCompat="@drawable/header_main_home" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</layout>

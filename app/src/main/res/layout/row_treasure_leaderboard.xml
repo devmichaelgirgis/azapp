@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <com.exceedgulf.alainzoo.views.RoundedImageView
+                android:id="@+id/rowTresureLeaderboard_ivuserprofilepic"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:civ_border="true"
+                app:civ_border_color="@color/white_badge_text"
+                app:civ_border_width="@dimen/_2sdp"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/rowTresureLeaderboard_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mosab alawad"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/rowTresureLeaderboard_tvPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="512 Points"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/rowTresureLeaderboard_tvClues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15 Clues"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/rowTresureLeaderboard_ivTrophy"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    app:srcCompat="@drawable/ic_trophy" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/rowTresureLeaderboard_tvRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="22 Rank"
+                    android:textColor="@color/colorTresurhunt"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/white_line_dialog" />
+    </LinearLayout>
+</layout>

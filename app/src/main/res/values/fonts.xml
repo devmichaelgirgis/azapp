@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cross_town">fonts/cross_town_en.ttf</string>
+    <string name="avenir_next_bold">fonts/avenir_next_bold_en.ttf</string>
+    <string name="avenir_next_demi_bold">fonts/avenir_next_demi_bold_en.ttf</string>
+    <string name="avenir_next_medium">fonts/avenir_next_medium_en.ttf</string>
+    <string name="avenir_next_regular">fonts/avenir_next_regular_en.ttf</string>
+    <!--<string name="helveticaneueltarabic_roman">fonts/helveticaneueltarabic_roman_en.ttf</string>-->
+    <!--<string name="roboto_bold">fonts/roboto_bold_en.ttf</string>-->
+    <!--<string name="roboto_regular">fonts/roboto_regular_en.ttf</string>-->
+    <!--<string name="sfcompactdisplay_bold">fonts/sfcompactdisplay_bold_en.otf</string>-->
+    <!--<string name="sfcompactdisplay_medium">fonts/sfcompactdisplay_medium_en.otf</string>-->
+    <!--<string name="sfcompactdisplay_regular">fonts/sfcompactdisplay_regular_en.ttf</string>-->
+</resources>

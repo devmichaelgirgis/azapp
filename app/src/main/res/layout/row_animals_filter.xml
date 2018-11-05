@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/category_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/camo"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+
+        <com.exceedgulf.alainzoo.views.CustomCheckBox
+            android:id="@+id/row_animcat_chkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/animal_filter_drawable"
+            app:fontFamily="@string/avenir_next_regular"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/light_grey_green"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="@dimen/_14ssp"
+            tools:text="Amphibians" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/military_green" />
+
+
+    </LinearLayout>
+</layout>

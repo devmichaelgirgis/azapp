@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_edu_ivplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@color/gray_item"
+                android:padding="@dimen/_40sdp"
+                android:scaleType="centerInside"
+                android:tint="@color/colorplaceholder"
+                app:srcCompat="@drawable/logo_splash" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_edu_ivmain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fram_experinces" />
+
+            <com.exceedgulf.alainzoo.views.CustomButton
+                android:id="@+id/row_edu_btnreadmore"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:background="@drawable/iv_read_more_btn"
+                android:backgroundTint="@color/light_eggplant"
+                android:gravity="center"
+                android:text="@string/read_more"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@string/avenir_next_regular" />
+        </FrameLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_edu_tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/slate_grey_two"
+            android:textSize="@dimen/_20ssp"
+            app:fontFamily="@string/cross_town"
+            tool:text="Meet lion" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_edu_tvdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:maxLines="7"
+            android:textColor="@color/slate_grey_two"
+            android:textSize="@dimen/_11ssp"
+            app:fontFamily="@string/avenir_next_regular"
+            tool:text="Nilo and her four adorable lion cubs are out exploring at Werribee Open Range Zoo. The best time to see the cubs will be early in the morning from 9:30am-10.30am. As with all young ones, the cubs will need their rest so we ask for visitors’ patience as they move into the dens to rest and feed." />
+
+    </LinearLayout>
+
+</layout>

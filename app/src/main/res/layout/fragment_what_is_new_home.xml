@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.exceedgulf.alainzoo.HomeActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/tv_what_is_new_title"
+                style="@style/TextViewTitleHome"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="@dimen/_8sdp"
+                android:text="@string/what_is_news"
+                app:fontFamily="@string/cross_town" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/tv_whats_is_new_see_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/ic_blue_back"
+                android:drawablePadding="@dimen/_8sdp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:text="@string/see_all"
+                android:textColor="@color/cool_blue"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_what_is_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:clipToPadding="false"
+                android:minHeight="@dimen/_102sdp"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/_10sdp" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/whatsnew_tvEmptyView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/_102sdp"
+                android:text="@string/fetching_data"
+                android:textSize="@dimen/_20sdp"
+                android:visibility="visible"
+                app:fontFamily="@string/cross_town" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

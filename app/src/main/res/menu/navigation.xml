@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_bottom_nav"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_explore_zoo"
+        android:icon="@drawable/explore_zoo_bottom_nav"
+        android:title="@string/title_explore_zoo" />
+
+    <item
+        android:id="@+id/navigation_plan_visit"
+        android:icon="@drawable/plan_visit_bottom_nav"
+        android:title="@string/title_plan_visit" />
+    <item
+        android:id="@+id/navigation_buy_ticket"
+        android:icon="@drawable/ticket_bottom_nav"
+        android:title="@string/title_buy_ticket" />
+
+</menu>

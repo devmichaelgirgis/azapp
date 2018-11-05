@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_10sdp"
+        android:weightSum="3">
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_ophrtime_tvcol1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:gravity="start"
+            android:textColor="@color/coloropeninghr"
+            android:textSize="@dimen/_10ssp"
+            app:fontFamily="@string/avenir_next_medium"
+            tools:text="PUBLIC HOLIDAYS" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_ophrtime_tvcol2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="start"
+            android:textColor="@color/coloropeninghr"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textSize="@dimen/_10ssp"
+            app:fontFamily="@string/avenir_next_medium"
+            tools:text="PUBLIC HOLIDAYS" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_ophrtime_tvcol3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:textColor="@color/coloropeninghr"
+            android:textSize="@dimen/_10ssp"
+            app:fontFamily="@string/avenir_next_medium"
+            tools:text="PUBLIC HOLIDAYS" />
+
+    </LinearLayout>
+</layout>

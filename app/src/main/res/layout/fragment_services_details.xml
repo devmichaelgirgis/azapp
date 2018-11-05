@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.exceedgulf.alainzoo.fragments.VisiterServicesDetailFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_24sdp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/fr_srv_de_ivplaceholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:background="@color/gray_item"
+                        android:padding="@dimen/_40sdp"
+                        android:scaleType="centerInside"
+                        android:tint="@color/colorplaceholder"
+                        app:srcCompat="@drawable/logo_splash" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/fr_srv_de_ivmain"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_208sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_208sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/fram_services" />
+
+                </FrameLayout>
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_srv_de_tvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="AL MAHA ROYAL"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="@dimen/_22ssp"
+                    app:fontFamily="@string/cross_town" />
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:id="@+id/fr_srv_de_tvdetail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:ems="10"-->
+                <!--android:text="At Al Maha Royal, you’re an exceptional guest! We offer luxurious packages of delicious food choices, private and luxury tours at the Zoo, Sheikh Zayed Desert Learning Centre and Al Ain Safari with our gracious tour guide, as well as the joy of feeding our giraffes and penguins. "-->
+                <!--android:textSize="@dimen/_11ssp"-->
+                <!--app:fontFamily="@string/avenir_next_regular" />-->
+
+                <WebView
+                    android:id="@+id/fr_srv_de_wvdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:scrollbars="none"
+                    tools:ignore="WebViewLayout" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="visible">
+
+                    <com.exceedgulf.alainzoo.views.CustomTextview
+                        android:id="@+id/fr_ser_det_tvguest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="6 GUESTS"
+                        android:textColor="@color/brownish_orange"
+                        android:textSize="@dimen/_11ssp"
+                        android:visibility="gone"
+                        app:fontFamily="@string/avenir_next_medium" />
+
+                </RelativeLayout>
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_ser_det_tvrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:gravity="end"
+                    android:text="2500 AED"
+                    android:textColor="@color/brownish_orange"
+                    android:textSize="@dimen/_11ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_ser_det_tvlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="start"
+                    android:text="Language:Arabic &amp; English."
+                    android:textColor="@color/brownish_orange"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="visible"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_ser_det_tvbookingno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:autoLink="phone"
+                    android:gravity="start"
+                    android:textColor="@color/brownish_orange"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="visible"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:text="For Bookings: 800966" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_ser_det_tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:autoLink="email"
+                    android:gravity="start"
+                    android:textColor="@color/brownish_orange"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="visible"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:text="abc@gmail.com" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/fr_ser_det_btninqueryforservices"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/ic_rectangle_yellow"
+                    android:gravity="center"
+                    android:text="@string/enquire_for_service"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/brownish_orange"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

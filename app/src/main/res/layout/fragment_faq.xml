@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/frFaq_scrollFaqList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/frFaq_llFaqList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_10sdp" />
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/frFaq_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone"
+            app:fontFamily="@string/avenir_next_regular" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/grape"
+            app:srcCompat="@drawable/header_main_home" />
+
+
+    </FrameLayout>
+</layout>

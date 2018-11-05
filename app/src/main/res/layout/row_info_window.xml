@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/row_info_llParent"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/row_info_cbvisited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_minus10sdp"
+                android:buttonTint="@color/reddish"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/row_info_ivplaceholder"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:background="@color/gray_item"
+                        android:padding="@dimen/_10sdp"
+                        android:scaleType="centerInside"
+                        android:tint="@color/colorplaceholder"
+                        app:srcCompat="@drawable/logo_splash" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/row_info_ivImage"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:scaleType="centerCrop" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/fram_happeningnowlist" />
+
+                </FrameLayout>
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/row_info_tvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:paddingStart="0dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/slate_grey_two"
+                    android:textDirection="anyRtl"
+                    android:textSize="@dimen/_18ssp"
+                    app:fontFamily="@string/cross_town"
+                    tools:text="dlknsvladnsvlnadsvlnlslskndvlnllskndvlnlskndvlnlknsdvlnsdlv" />
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_info_tvsubtitle"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:textAlignment="viewStart"
+                android:textColor="@color/slate_grey"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_9ssp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                app:fontFamily="@string/avenir_next_regular"
+                tools:text="Hello dsfdfdsfsdfdsfdsfsdfdsfdsfdsfdsfdsfdsfdsfdsf" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_info_tvNavigate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_red_corner_edt"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/take_me_there"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_info_tvSeeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_red_corner_edt"
+                android:backgroundTint="@color/colorBgSeeInfo"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/see_more_info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

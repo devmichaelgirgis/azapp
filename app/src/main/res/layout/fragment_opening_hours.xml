@@ -1,0 +1,425 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.OpeningHoursFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/fr_openinghr_rootview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_22sdp"
+                android:paddingBottom="@dimen/_16sdp">
+
+                <!--&lt;!&ndash;First Start&ndash;&gt;-->
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/cross_town"-->
+                <!--android:text="ZOO OPENING HOURS"-->
+                <!--android:textColor="@color/cool_blue"-->
+                <!--android:textSize="@dimen/_20ssp" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_45sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/zoo" />-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="PUBLIC HOLIDAYS"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="9:00 AM - 8:00 PM"-->
+                <!--android:textColor="@color/cool_blue"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="DAILY"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="09:00 AM - 10:00 PM"-->
+                <!--android:textColor="@color/cool_blue"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--&lt;!&ndash;First End&ndash;&gt;-->
+
+                <!--&lt;!&ndash;Second Start&ndash;&gt;-->
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--app:fontFamily="@string/cross_town"-->
+                <!--android:text="SZDLC OPENING HOURS"-->
+                <!--android:textColor="@color/snot"-->
+                <!--android:textSize="@dimen/_20ssp" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_45sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/zoo" />-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="PUBLIC HOLIDAYS"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="9:00 AM - 8:00 PM"-->
+                <!--android:textColor="@color/snot"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="DAILY"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="09:00 AM - 10:00 PM"-->
+                <!--android:textColor="@color/snot"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--&lt;!&ndash;Second End&ndash;&gt;-->
+
+                <!--&lt;!&ndash;Third Start&ndash;&gt;-->
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--app:fontFamily="@string/cross_town"-->
+                <!--android:text="SHEIKH ZAYED DESERT LEARNING CENTER GUIDED TOURS"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_20ssp" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_45sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/zoo" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="Language"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_weight="1"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Time"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="ENGLISH"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="11:30 AM - 12:30 PM DAILY"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="ARABIC"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="01:30 PM - 02:30 PM DAILY"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="ENGLISH"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="03:30 PM - 04:30 PM DAILY"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="ARABIC"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="05:30 PM - 06:300 PM DAILY"-->
+                <!--android:textColor="@color/very_light_brown"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--app:fontFamily="@string/avenir_next_demi_bold"-->
+                <!--android:text="* Each Tour will last between 1 hour to 1.5 hours"-->
+                <!--android:textColor="@color/coloropeninghrlist"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--&lt;!&ndash;Third End&ndash;&gt;-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--app:fontFamily="@string/cross_town"-->
+                <!--android:text="SHEIKH ZAYED DESERT LEARNING CENTER FILM"-->
+                <!--android:textColor="@color/tomato"-->
+                <!--android:textSize="@dimen/_20ssp" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_45sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/zoo" />-->
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="start"-->
+                <!--android:text="Time"-->
+                <!--android:textColor="@color/coloropeninghr"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="11:35 AM - 11:45 AM DAILY"-->
+                <!--android:textColor="@color/tomato"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="11:35 AM - 11:45 AM DAILY"-->
+                <!--android:textColor="@color/tomato"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="03:30 PM - 03:45 PM DAILY"-->
+                <!--android:textColor="@color/tomato"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="05:30 PM - 05:45 PM DAILY"-->
+                <!--android:textColor="@color/tomato"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/_20sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--app:fontFamily="@string/avenir_next_medium"-->
+                <!--android:gravity="end"-->
+                <!--android:text="06:30 PM - 06:45 PM DAILY"-->
+                <!--android:textColor="@color/tomato"-->
+                <!--android:textSize="@dimen/_10ssp" />-->
+
+
+            </LinearLayout>
+        </ScrollView>
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_ophr_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fontFamily="@string/cross_town"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="visible" />
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/dark_blue_grey"
+            app:srcCompat="@drawable/header_main_home" />
+    </FrameLayout>
+</layout>

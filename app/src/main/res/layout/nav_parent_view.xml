@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_nav_icon"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/ic_menu_about" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/tv_nav_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_nav_icon"
+        android:layout_toStartOf="@id/iv_arrow_expand"
+        android:textAlignment="viewStart"
+        android:textColor="@color/brownish_grey_two"
+        android:textDirection="anyRtl"
+        android:textSize="@dimen/_12ssp"
+        app:fontFamily="@string/avenir_next_medium"
+        tool:text="@string/title_activity_test1" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_arrow_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/_8sdp"
+        app:srcCompat="@drawable/ic_grey_back_arrow" />
+
+    <View
+        android:id="@+id/viewLeft5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/iv_nav_icon"
+        android:background="@color/slide_back_color" />
+
+
+</RelativeLayout>

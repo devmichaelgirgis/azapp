@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.exceedgulf.alainzoo.fragments.HappeningNowDetailFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_8sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/fr_hpn_de_ivplaceholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_208sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:background="@color/gray_item"
+                        android:padding="@dimen/_40sdp"
+                        android:scaleType="centerInside"
+                        android:tint="@color/colorplaceholder"
+                        app:srcCompat="@drawable/logo_splash" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/fr_hpn_de_ivmain"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_208sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:scaleType="centerCrop" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_208sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/fram_happening_detail" />
+
+                </FrameLayout>
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_hpn_de_tvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="Here goes a title"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="@dimen/_22ssp"
+                    app:fontFamily="@string/cross_town" />
+
+                <WebView
+                    android:id="@+id/fr_hpn_de_wvdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:scrollbars="none"
+                    tools:ignore="WebViewLayout" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/light_grey_blue"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

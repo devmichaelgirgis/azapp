@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_search_item_ivplaceHolder"
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@color/gray_item"
+                android:padding="@dimen/_10sdp"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_splash"
+                android:tint="@color/colorplaceholder" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_search_item_iv"
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/fram_search_row" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_search_item_tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Lion"
+                android:textAlignment="viewStart"
+                android:textColor="@color/charcoal_grey"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:fontFamily="@string/avenir_next_bold" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_search_item_tvType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                tools:text="Animals, Experience"
+                android:textAlignment="viewStart"
+                android:textColor="#afaeb2"
+                android:textDirection="anyRtl"
+                android:textSize="13sp"
+                app:fontFamily="@string/avenir_next_regular" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_search_item_tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="4"
+                tools:text="Name the Lion Cubs lion cubs, with 3 guests. E &amp; N. Carrick An exclusive morning viewing of the lion"
+                android:textAlignment="viewStart"
+                android:textColor="@color/charcoal_grey"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal"
+                app:fontFamily="@string/avenir_next_regular" />
+
+            <com.exceedgulf.alainzoo.views.CustomButton
+                android:id="@+id/rw_exp_see_ivread_more"
+                android:layout_width="@dimen/_86sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_read_yellow"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/read_more"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:fontFamily="@string/avenir_next_regular" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

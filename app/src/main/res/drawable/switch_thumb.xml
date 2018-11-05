@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/gray_item" />
+        </shape>
+    </item>
+
+    <item
+        android:width="@dimen/_20sdp"
+        android:height="@dimen/_20sdp"
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item
+        android:width="@dimen/_10sdp"
+        android:height="@dimen/_14sdp"
+        android:gravity="center">
+        <bitmap
+            android:src="@drawable/switch_bell"
+            android:tint="@color/switch_color" />
+    </item>
+</layer-list>

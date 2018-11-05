@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home_nav_menu_parent">
+        <item>Home</item>
+        <item>Map</item>
+        <item>Animals</item>
+        <item>Visitor Services</item>
+        <item>Experiences</item>
+        <item>Education</item>
+        <item>Zoo Camera</item>
+        <item>Request Shuttle</item>
+        <item>Games</item>
+        <item>My Parking</item>
+        <item>About Us</item>
+        <item>Treasure Hunt</item>
+        <item>Do &amp; Don\'t</item>
+        <item>Share</item>
+        <item>Help</item>
+        <item>Settings</item>
+    </array>
+
+    <string name="mHome">Home</string>
+    <string name="mAboutUs">About Us</string>
+    <string name="mAnimals">Animals</string>
+    <string name="mMap">Map</string>
+    <string name="mRequestShuttle">Request Shuttle</string>
+    <string name="mSOSRequest">SOS Request</string>
+    <string name="mMyPark">My Parking</string>
+    <string name="mExperiences">Experiences</string>
+    <string name="mEducation">Education</string>
+    <string name="mServices">Visitor Services</string>
+    <string name="mZooCamrea">Zoo Camera</string>
+    <string name="mGames">Games</string>
+    <string name="mNotifications">Notifications</string>
+    <string name="mSettings">Settings</string>
+    <string name="mShare">Share</string>
+    <string name="mHelp">Help</string>
+    <string name="mTreasureHunt">Treasure Hunt</string>
+
+</resources>

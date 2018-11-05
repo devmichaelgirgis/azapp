@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_hpn_de_tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="CONSERVATION FESTIVAL"
+            android:textColor="@color/slate_grey_two"
+            android:textSize="@dimen/_22ssp"
+            app:fontFamily="@string/cross_town" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/fr_wtsne_ivplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:background="@color/gray_item"
+                android:contentDescription="@string/application_name"
+                android:padding="@dimen/_40sdp"
+                android:scaleType="centerInside"
+                android:tint="@color/colorplaceholder"
+                app:srcCompat="@drawable/logo_splash" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/fr_wtsne_ivmain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:contentDescription="@string/application_name"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:contentDescription="@string/application_name"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fram_whats_new_row" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llStarttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_wtsne_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/tomato"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_bold"
+                    tools:text="18 Nov 2017" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="end"
+                    android:text="@string/to"
+                    android:textColor="@color/tomato"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_bold" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_wtsne_tvendDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/tomato"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_bold"
+                    tools:text="18 Nov 2017" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_wtsne_tvtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/dark_blue_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_bold"
+                    tools:text="5 PM" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="start"
+                    android:text="@string/to"
+                    android:textColor="@color/dark_blue_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_bold" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_wtsne_tvendTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/dark_blue_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_bold"
+                    tools:text="5 PM" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_hpn_de_tvdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Let's go back to our mother nature, and explore the rich natural resources and reveal some mysteries! Exciting workshops and activities await you at our Conservation Festival"
+            android:textSize="@dimen/_11ssp"
+            app:fontFamily="@string/avenir_next_regular" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/fr_expl_llfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/reddish"
+                android:paddingBottom="@dimen/_10sdp"
+                app:ael_duration="500"
+                app:ael_expanded="false"
+                app:ael_interpolator="linear"
+                app:ael_orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/fr_expl_Animals"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/fr_expl_animal"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_show_animal" />
+
+                            <com.exceedgulf.alainzoo.views.CustomTextview
+                                android:id="@+id/fr_expl_tvAnimal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_animals"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorexplorezoofilter"
+                                android:textSize="@dimen/_14ssp"
+                                app:fontFamily="@string/avenir_next_regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fr_expl_Experience"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/fr_expl_ivExperience"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_show_experience" />
+
+                            <com.exceedgulf.alainzoo.views.CustomTextview
+                                android:id="@+id/fr_expl_tvExperience"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_experience"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorexplorezoofilter"
+                                android:textSize="@dimen/_14ssp"
+                                app:fontFamily="@string/avenir_next_regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/fr_expl_Transport"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:visibility="gone">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/fr_expl_ivTransport"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_show_transpot" />
+
+                            <com.exceedgulf.alainzoo.views.CustomTextview
+                                android:id="@+id/fr_expl_tvTransport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_transport"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorexplorezoofilter"
+                                android:textSize="@dimen/_14ssp"
+                                app:fontFamily="@string/avenir_next_regular" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/fr_expl_Restaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp">
+
+                            <android.support.v7.widget.AppCompatImageView
+                                android:id="@+id/fr_expl_ivRestaurant"
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:scaleType="centerInside"
+                                app:srcCompat="@drawable/ic_show_restaurant" />
+
+                            <com.exceedgulf.alainzoo.views.CustomTextview
+                                android:id="@+id/fr_expl_tvRestaurant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/show_restaurant"
+                                android:textAllCaps="false"
+                                android:textColor="@color/colorexplorezoofilter"
+                                android:textSize="@dimen/_14ssp"
+                                app:fontFamily="@string/avenir_next_regular" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/application_name"
+                android:scaleType="fitXY"
+                android:tint="@color/reddish"
+                app:srcCompat="@drawable/header_main_home" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/fr_expl_btn_gps_center"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="bottom|end"
+            android:scaleType="centerInside"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/bg_circle_white"
+            android:src="@drawable/ic_gps_not_fixed" />
+
+    </FrameLayout>
+</layout>

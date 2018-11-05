@@ -1,0 +1,75 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.ZooCameraFragment">
+
+        <com.otaliastudios.cameraview.CameraView
+            android:id="@+id/camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:keepScreenOn="true" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/frag_vpFrames"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="@dimen/_10sdp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/frag_ivCapture"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_camera" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/frag_ivArrowPrevious"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/_2sdp"
+                android:rotation="@integer/rotation_270"
+                android:scaleType="fitXY"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_arrow_up" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/frag_ivArrowNext"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/_2sdp"
+                android:rotation="@integer/rotation_90"
+                android:scaleType="fitXY"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_arrow_up" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/light_eggplant"
+            app:srcCompat="@drawable/header_main_home" />
+    </FrameLayout>
+</layout>

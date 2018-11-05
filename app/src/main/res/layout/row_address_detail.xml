@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/frcontact_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/brownish_grey_three"
+        android:textDirection="anyRtl"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="@string/avenir_next_demi_bold"
+        tools:text="@string/location" />
+
+    <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+        android:id="@+id/frcontact_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

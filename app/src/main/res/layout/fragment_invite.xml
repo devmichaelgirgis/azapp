@@ -1,0 +1,89 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.exceedgulf.alainzoo.fragments.InviteFragment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:orientation="vertical">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_invitation_via_email"
+                    android:textColor="@color/warm_grey_two"
+                    android:textSize="@dimen/_18ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/enter_the_email_id_of_the_family"
+                    android:textColor="@color/warm_grey_two"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_32sdp"
+                    android:text="@string/email_id"
+                    android:textColor="@color/brownish_grey_three"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+
+                <com.exceedgulf.alainzoo.views.CustomEdittext
+                    android:id="@+id/frInvite_edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_feedback_border"
+                    android:gravity="top"
+                    android:hint="@string/enter_email_id"
+                    android:maxLines="1"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/brownish_grey_three"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/frInvite_btnSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:background="@drawable/bg_red_corner_edt"
+                    android:text="@string/send_invitation"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/light_eggplant"
+            app:srcCompat="@drawable/header_main_home" />
+    </FrameLayout>
+</layout>

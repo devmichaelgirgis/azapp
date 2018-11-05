@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="home_nav_menu_parent">
+        <item>الصفحة الرئيسية</item>
+        <item>الخريطة</item>
+        <item>الحيوانات</item>
+        <item>خدمات الزوار</item>
+        <item>التجارب</item>
+        <item>التعليم</item>
+        <item>كاميرا الحديقة</item>
+        <item>خدمة المركبات</item>
+        <item>ألعاب</item>
+        <item>مكان وقوف السيارة</item>
+        <item>عن الحديقة</item>
+        <item>اصطياد الكنز</item>
+        <item>إفعل ولا تفعل </item>
+        <item>مشاركة</item>
+        <item>مساعدة</item>
+        <item>الإعدادات</item>
+    </array>
+
+
+    <string name="mAboutUs">عن الحديقة</string>
+    <string name="mAnimals">الحيوانات</string>
+    <string name="mMap">الخريطة</string>
+    <string name="mRequestShuttle">خدمة المركبات</string>
+    <string name="mSOSRequest">طلب طوارئ</string>
+    <string name="mMyPark">مكان وقوف السيارة</string>
+    <string name="mExperiences">التجارب</string>
+    <string name="mEducation">التعليم</string>
+    <string name="mServices">خدمات الزوار</string>
+    <string name="mZooCamrea">كاميرا الحديقة</string>
+    <string name="mGames">ألعاب</string>
+    <string name="mNotifications">الإشعارات</string>
+    <string name="mSettings">الإعدادات</string>
+    <string name="mShare">مشاركة</string>
+    <string name="mHelp">مساعدة</string>
+    <string name="mTreasureHunt">اصطياد الكنز</string>
+
+</resources>

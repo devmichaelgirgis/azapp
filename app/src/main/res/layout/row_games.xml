@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16sdp">
+
+            <FrameLayout
+                android:id="@+id/row_game_frmain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/row_game_ivplaceholder"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:background="@color/gray_item"
+                    android:padding="@dimen/_15sdp"
+                    android:scaleType="centerInside"
+                    android:tint="@color/colorplaceholder"
+                    app:srcCompat="@drawable/logo_splash" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/row_game_iv_main"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/fram_happeningnowlist" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/fram_happeningnowlist" />
+
+            </FrameLayout>
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_game_tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_toEndOf="@id/row_game_frmain"
+                android:paddingBottom="@dimen/_6sdp"
+                android:text="World of ZOO"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@string/avenir_next_demi_bold" />
+
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_game_tvdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/row_game_tvtitle"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_toEndOf="@id/row_game_frmain"
+                android:text="World of Zoo is a life simulation video game, published by THQ and developed by Blue Fang Games, who also developed the similar Zoo Tycoon series"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_15ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_game_iviOsStore"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/row_game_tvdescription"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_toEndOf="@id/row_game_frmain"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_ios_store" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_game_ivAndroidStore"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/row_game_tvdescription"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_toEndOf="@id/row_game_iviOsStore"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_android_store" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/row_serv_devider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@color/happening_now_line" />
+    </LinearLayout>
+
+</layout>

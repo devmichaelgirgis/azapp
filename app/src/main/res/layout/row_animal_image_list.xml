@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/row_animde_sub_ivplaceholder"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_102sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@color/gray_item"
+            android:padding="@dimen/_20sdp"
+            android:scaleType="centerInside"
+            android:tint="@color/colorplaceholder"
+            app:srcCompat="@drawable/logo_splash" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/row_animde_sub_ivmain"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_102sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_102sdp"
+            android:layout_margin="@dimen/_3sdp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/frame_animal_subitem" />
+
+    </FrameLayout>
+</layout>

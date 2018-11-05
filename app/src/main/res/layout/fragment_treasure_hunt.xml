@@ -1,0 +1,134 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.TreasureHuntFragment">
+
+        <LinearLayout
+            android:id="@+id/frTreasur_llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_30sdp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingStart="@dimen/_16sdp">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/frTreasur_tvRank"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/rank"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTresurhunt"
+                    android:textDirection="anyRtl"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:ignore="RtlCompat" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/frProfile_tvLeaderboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:autoLink="all"
+                    android:drawableEnd="@drawable/ic_next_tresurhunt"
+                    android:drawablePadding="@dimen/_3sdp"
+                    android:gravity="center_vertical"
+                    android:linksClickable="false"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:selectAllOnFocus="false"
+                    android:text="@string/leaderboard"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/colorTresurhunt"
+                    android:textDirection="anyRtl"
+                    android:textSize="@dimen/_14ssp"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+            <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                android:id="@+id/fr_tres_rvmain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frTreasur_llHiden"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_30sdp"
+            android:visibility="gone">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/stay_tuned"
+                android:textAllCaps="true"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_26ssp"
+                app:fontFamily="@string/cross_town" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_minus30sdp"
+                android:layout_marginEnd="@dimen/_minus30sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:srcCompat="@drawable/ic_bag_large" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/frTreasur_tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:text="@string/come_back_at_11_00_am_to_find_the_zoo_hidden_treasure"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+
+        </LinearLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_tres_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/colorTresurhunt"
+            app:srcCompat="@drawable/header_main_home" />
+    </FrameLayout>
+</layout>

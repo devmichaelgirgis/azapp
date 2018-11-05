@@ -1,0 +1,43 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.exceedgulf.alainzoo.fragments.ContactUsMapFragment">
+
+        <fragment
+            android:id="@+id/frContact_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/frContact_tvGo"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/ic_go_btn"
+            android:padding="@dimen/_2sdp"
+            app:fontFamily="@string/cross_town"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="@string/go"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/very_light_brown"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

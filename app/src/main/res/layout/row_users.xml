@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.exceedgulf.alainzoo.database.models.Family" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_users"
+            android:padding="@dimen/_2sdp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.exceedgulf.alainzoo.views.CustomImageView
+                    android:id="@+id/iv_placeHolder"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@color/gray_item"
+                    android:contentDescription="@string/application_name"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logo_splash"
+                    android:tint="@color/colorplaceholder" />
+
+                <com.exceedgulf.alainzoo.views.CustomImageView
+                    android:id="@+id/roundedImageView"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:contentDescription="@string/application_name"
+                    android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:text="@{model.name}"
+            android:textAlignment="center"
+            android:textColor="@color/warm_grey_three"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_11ssp"
+            app:fontFamily="@string/avenir_next_medium"
+            tools:text="Abdul-Qader" />
+
+    </LinearLayout>
+</layout>

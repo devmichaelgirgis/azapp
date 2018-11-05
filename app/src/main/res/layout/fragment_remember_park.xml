@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/fragMyPark_llSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_16sdp">
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/fragMyPark_btnGoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_red_corner_edt"
+                    android:backgroundTint="@color/colorMyParkBtn"
+                    android:text="@string/goto_parking"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    android:visibility="gone"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/fragMyPark_btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_red_corner_edt"
+                    android:text="@string/save_my_parking"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_demi_bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fragMyPark_llDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingTop="@dimen/_16sdp"
+                android:visibility="gone">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/are_you_sure_you_want_to_delete_your_current_parking_location"
+                    android:textAlignment="center"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_13ssp"
+                    android:visibility="visible"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_28sdp">
+
+                    <com.exceedgulf.alainzoo.views.CustomButton
+                        android:id="@+id/fragMyPark_btnYes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_red_corner_edt"
+                        android:backgroundTint="@color/colorMyParkBtn"
+                        android:text="@string/yes"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13ssp"
+                        android:visibility="visible"
+                        app:fontFamily="@string/avenir_next_demi_bold" />
+
+                    <com.exceedgulf.alainzoo.views.CustomButton
+                        android:id="@+id/fragMyPark_btnDismiss"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_red_corner_edt"
+                        android:text="@string/dismiss"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_13ssp"
+                        app:fontFamily="@string/avenir_next_demi_bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/snot"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_138sdp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_plan_ivplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_138sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:adjustViewBounds="true"
+                android:background="@color/gray_item"
+                android:padding="@dimen/_30sdp"
+                android:scaleType="centerInside"
+                android:tint="@color/colorplaceholder"
+                app:srcCompat="@drawable/logo_splash" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_plan_ivmain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_138sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_138sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/frame_plan_visit" />
+
+        </FrameLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_plan_tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/row_plan_tvSeeDetails"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@color/colorplanrecom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@string/avenir_next_medium"
+            tools:text="Plan One" />
+
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_plan_tvSeeDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:autoLink="all"
+            android:background="@color/colorplanrecom"
+            android:linksClickable="false"
+            android:padding="@dimen/_5sdp"
+            android:selectAllOnFocus="false"
+            android:text="@string/see_details"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_9ssp"
+            app:fontFamily="@string/avenir_next_medium" />
+
+    </RelativeLayout>
+</layout>

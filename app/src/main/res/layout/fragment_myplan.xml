@@ -1,0 +1,505 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.PlanVisitDetailFragment">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_30sdp">
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.6"-->
+                <!--android:orientation="vertical">-->
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visit_day"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/frplandetail_tvdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_feedback_border"
+                    android:focusable="false"
+                    android:minWidth="@dimen/_90sdp"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:text="10/11/2017" />
+
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/plan_name"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomEdittext
+                    android:id="@+id/frplandetail_edtplanename"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_feedback_border"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium"
+                    tools:text="Hello" />
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.4"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Duration"-->
+                <!--android:textColor="@color/slate_grey"-->
+                <!--android:textSize="@dimen/_15ssp"-->
+                <!--app:fontFamily="@string/avenir_next_medium" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:background="@drawable/bg_feedback_border"-->
+                <!--android:padding="@dimen/_2sdp"-->
+                <!--android:paddingEnd="@dimen/_16sdp"-->
+                <!--android:paddingStart="@dimen/_16sdp"-->
+                <!--android:text="8"-->
+                <!--android:textColor="@color/slate_grey"-->
+                <!--android:textSize="@dimen/_15ssp"-->
+                <!--app:fontFamily="@string/avenir_next_medium" />-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:padding="@dimen/_2sdp"-->
+                <!--android:paddingEnd="@dimen/_16sdp"-->
+                <!--android:paddingStart="@dimen/_16sdp"-->
+                <!--android:text="Hrs"-->
+                <!--android:textColor="@color/slate_grey"-->
+                <!--android:textSize="@dimen/_14ssp"-->
+                <!--app:fontFamily="@string/avenir_next_medium" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_30sdp">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="@dimen/_15sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_120sdp"-->
+                <!--android:background="@drawable/bg_edittext"-->
+                <!--android:gravity="bottom|center"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/_100sdp"-->
+                <!--android:layout_gravity="bottom|center"-->
+                <!--app:srcCompat="@drawable/ic_animal_male" />-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Suggested Ticket for Adult"-->
+                <!--android:textColor="@color/camo"-->
+                <!--android:textSize="@dimen/_15ssp"-->
+                <!--app:fontFamily="@string/avenir_next_regular" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="250 AED"-->
+                <!--android:textColor="@color/medium_grey"-->
+                <!--android:textSize="@dimen/_23ssp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="@dimen/_15sdp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_120sdp"-->
+                <!--android:background="@drawable/bg_edittext"-->
+                <!--android:gravity="bottom|center"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<android.support.v7.widget.AppCompatImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/_92sdp"-->
+                <!--android:layout_gravity="bottom|center"-->
+                <!--app:srcCompat="@drawable/ic_animal_female" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Suggested Ticket for Child"-->
+                <!--android:textColor="@color/camo"-->
+                <!--android:textSize="@dimen/_15ssp"-->
+                <!--app:fontFamily="@string/avenir_next_regular" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:text="150 AED"-->
+                <!--android:textColor="@color/medium_grey"-->
+                <!--android:textSize="@dimen/_23ssp" />-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/frplandetail_llanimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_25sdp">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/frpdetail_ivanimal"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_animals_empty" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/selected_animals"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_medium" />
+
+                        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                            android:id="@+id/frpdetail_rvanimal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <!--<com.google.android.flexbox.FlexboxLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:flexDirection="row"-->
+                        <!--app:flexWrap="wrap">-->
+
+                        <!--<include layout="@layout/row_plan_item" />-->
+
+                        <!--<include layout="@layout/row_plan_item" />-->
+
+                        <!--</com.google.android.flexbox.FlexboxLayout>-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_item" />
+
+                <LinearLayout
+                    android:id="@+id/frplandetail_llwhatsnew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/frpdetail_ivwhatsnew"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_new_empty" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/what_s_new"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_medium" />
+
+                        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                            android:id="@+id/frpdetail_rvwhatsnew"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <!--<com.google.android.flexbox.FlexboxLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:flexDirection="row"-->
+                        <!--app:flexWrap="wrap">-->
+
+                        <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="No Animals Selected"-->
+                        <!--android:textColor="@color/colorTextHint"-->
+                        <!--android:textSize="@dimen/_15ssp"-->
+                        <!--app:fontFamily="@string/avenir_next_medium" />-->
+
+
+                        <!--</com.google.android.flexbox.FlexboxLayout>-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_item" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/frpdetail_ivexperiances"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_experience_empty" />
+
+                    <LinearLayout
+                        android:id="@+id/frplandetail_llexperianse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/selected_experience"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_medium" />
+
+
+                        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                            android:id="@+id/frpdetail_rvexperience"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <!--<com.google.android.flexbox.FlexboxLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:flexDirection="row"-->
+                        <!--app:flexWrap="wrap">-->
+
+                        <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="No Experiences Selected"-->
+                        <!--android:textColor="@color/colorTextHint"-->
+                        <!--android:textSize="@dimen/_15ssp"-->
+                        <!--app:fontFamily="@string/avenir_next_medium" />-->
+
+                        <!--</com.google.android.flexbox.FlexboxLayout>-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_item" />
+
+                <LinearLayout
+                    android:id="@+id/frplandetail_llattractions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/frpdetail_ivattractions"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="@dimen/_44sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_add_attractions_empty" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/selected_attractions"
+                            android:textColor="@color/medium_grey"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_medium" />
+
+
+                        <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                            android:id="@+id/frpdetail_rvattractions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <!--<com.google.android.flexbox.FlexboxLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--app:flexDirection="row"-->
+                        <!--app:flexWrap="wrap">-->
+
+                        <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="No Attractions Selected"-->
+                        <!--android:textColor="@color/colorTextHint"-->
+                        <!--android:textSize="@dimen/_15ssp"-->
+                        <!--app:fontFamily="@string/avenir_next_medium" />-->
+
+                        <!--</com.google.android.flexbox.FlexboxLayout>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_item"
+                    android:visibility="gone" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/frpdetail_btnconfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/ic_plan_btn"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:visibility="gone"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/frMyPlan_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:minHeight="@dimen/_260sdp"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20ssp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/cool_blue"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

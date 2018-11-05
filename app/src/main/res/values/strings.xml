@@ -1,0 +1,396 @@
+<resources>
+    <string name="application_name">Al Ain Zoo</string>
+    <string name="ok">OK</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="lang" translatable="false">en</string>
+    <string name="langTitle">Choose your preferred language</string>
+    <string name="langSubTitle">You can change your language preference any time from your setting page</string>
+    <string name="lang1_title">English</string>
+    <string name="lang1">All content will be in English</string>
+    <string name="lang2_title">العربى</string>
+    <string name="lang2">جميع المحتويات ستكون بالعربية</string>
+    <string name="notification">Notification</string>
+
+    <!--<string name="facebook_app_id" translatable="false">151200345490996</string>-->
+    <!--<string name="fb_login_protocol_scheme" translatable="false">fb151200345490996</string>-->
+    <string name="facebook_app_id">244990179202534</string>
+    <string name="fb_login_protocol_scheme">fb244990179202534</string>
+
+    <string name="google_maps_api" translatable="false">AIzaSyCvcQnA0lyefHkZ3YHkLT9xh3WoBhmdyHs</string>
+
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Bottom Navigation-->
+    <string name="title_home">Home</string>
+    <string name="title_explore_zoo">Explore Zoo</string>
+    <string name="title_plan_visit">Plan your visit</string>
+    <string name="title_buy_ticket">Buy tickets</string>
+
+    <string name="title_my_plan">My Plan</string>
+
+    <string name="see_all">See All</string>
+    <string name="opening_hours">Opening Hours</string>
+
+    <string name="attractions">Attractions</string>
+    <string name="attraction">Attraction</string>
+    <string name="experiences">Experiences</string>
+    <string name="experience">Experience</string>
+    <string name="events">Events</string>
+    <string name="what_is_news">What\’s new</string>
+    <string name="LANGUAGE">Language</string>
+    <string name="register">Register</string>
+    <string name="register_log"><u>Register</u></string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="registeration_message">Registeration opens up a whole jungle of features!</string>
+    <string name="or">OR</string>
+    <string name="email_id">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password"><u>Forget Password?</u></string>
+    <string name="login">Login</string>
+    <string name="login_menu"><u>Login</u></string>
+    <string name="register_with_us">Register with Us</string>
+    <string name="register_via_social_media">Register via Social Media</string>
+    <string name="create_account">Create Account</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="Skip">Skip</string>
+    <string name="sign_in_fc"><u>Sign In</u></string>
+    <string name="tell_us_more_about_yourself_fc">Tell Us More About Yourself!</string>
+    <string name="more_about_you_helps_us_customize_your_experience_fc">More about you helps us customize your experience.</string>
+    <string name="your_name_afc">Your Name</string>
+    <string name="date_of_birth_afc">Date of Birth</string>
+    <string name="nationality_fc">Nationality</string>
+    <string name="emirate">City</string>
+    <string name="save_and_register">Save and Register</string>
+    <string name="title_activity_test2">Test2Activity</string>
+    <string name="animal">Animals</string>
+    <string name="title_activity_test1">Test1Activity</string>
+    <string name="read_more">Read More</string>
+    <string name="search_hint">…</string>
+    <string name="about_us">About Us</string>
+    <string name="map">Map</string>
+    <string name="request_shuttle">Request Shuttle</string>
+    <string name="sos_request">SOS Request</string>
+    <string name="my_park">My Park</string>
+    <string name="education">Education</string>
+    <string name="services">Visitor Services</string>
+    <string name="zoo_camrea">Zoo Camera</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
+    <string name="enqiure_for_services">Enqiure for Services</string>
+    <string name="email_id_">E-Mail ID</string>
+    <string name="date_of_services">Date of Service</string>
+    <string name="time_of_services">Time of Service</string>
+    <string name="collapsed">collapsed: %s</string>
+    <string name="expanded">expanded: %s</string>
+    <string name="all">All</string>
+    <string name="educations">Educations</string>
+    <string name="conservations">Conservations</string>
+    <string name="oops_no_result_found">Oops! No results found</string>
+    <string name="empty_seach_result_body">You can type anything in the search box above to start seeing respect results</string>
+
+    <!--New Strings-->
+    <string name="fetching_data">Loading&#8230;</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="cancel">Cancel</string>
+    <string name="collect">Collect</string>
+    <string name="hint_search_here">Search here&#8230;</string>
+    <string name="badges_earned">Badges Earned</string>
+    <string name="about_the_zoo">About the Zoo</string>
+    <string name="do_and_do_not">Do &amp; Don\'t</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="faq">FAQs</string>
+    <string name="contact_us">Contact us</string>
+
+    <string name="leaderboard"><u>Leaderboard</u></string>
+    <string name="location">Location</string>
+    <string name="nahyan_the_first_st_abu_dhabi_nunited_arab_emirates">Nahyan The First St, Abu Dhabi,  United Arab Emirates</string>
+    <string name="po_box">P.O Box</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="fax_number">FAX Number</string>
+    <string name="feedback">Feedback</string>
+    <string name="my_visit_plan"><u>My Visit Plan</u></string>
+    <string name="facilities_services"><![CDATA[Facilities & Services]]></string>
+    <string name="your_message">Your message</string>
+    <string name="your_feedback_is_valuable">Your Feedback is Valuable</string>
+    <string name="we_take_all_the_feedback_very_seriously_good_or_bad">Your feedback is  important</string>
+    <string name="feedback_type">Feedback Type</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="complain">Complain</string>
+    <string name="send_suggestion_to">Send Suggestion To</string>
+    <string name="upload_from_gallery">Upload from Gallery</string>
+    <string name="capture_an_image">Capture an Image</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="go">GO</string>
+    <string name="titlehappeningnow">Happening now!</string>
+    <string name="happeningnow">HAPPENING NOW</string>
+    <string name="title_invite">Invite</string>
+    <string name="title_leaderboard">Leaderboard</string>
+    <string name="title_opening_hours">Opening Hours</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_whats_new">What’s new</string>
+
+    <string name="no_internet_">There is no internet connection</string>
+    <string name="error">An error occurred, please try again later</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="comment">Comment</string>
+    <string name="contact_number"><u>800 ZOO (966)</u></string>
+    <string name="mobile_number">+97137992000</string>
+    <string name="info_email">info@alainzoo.ae</string>
+    <string name="_fax_contact">+97137829112</string>
+    <string name="zoo_s_hours">Zoo Opening Hours</string>
+    <string name="szdlc_hours">SZDLC Opening Hours</string>
+    <string name="view_on_the_map">View on the Map</string>
+    <string name="signin_via_social_media">Login via Social Media</string>
+    <string name="registeration_opens_up_a_whole_jungle_of_features">Register and enjoy more features!</string>
+    <string name="login_using_facebook">Login Using Facebook</string>
+    <string name="tell_us_more_about_yourself">Tell Us More About You</string>
+    <string name="more_about_you_helps_us_customize_your_experience">Tell us more about you to effectivly customize your experience</string>
+    <string name="your_name">Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="nationality">Nationality</string>
+    <string name="message_exit_app">Please click BACK again to exit</string>
+    <string name="we_ve_come_up_with_some_tried_and_test_plans_for_our_visitors">We have here some tried and tested plans for our visitors</string>
+    <string name="these_plans_ensure_you_make_the_most_out_of_your_visit">These plans ensure you make the most out of your visit!</string>
+    <string name="recommended_plans">Recommended Plans</string>
+    <string name="plan_your_visit">Plan Your Visit</string>
+    <string name="add_animals">Add Animals</string>
+    <string name="facebook_url" translatable="false">https://www.facebook.com/AlAinZooUAE/</string>
+    <string name="twitter_url" translatable="false">https://twitter.com/AlAinZooUAE</string>
+    <string name="snapchat_url" translatable="false"> https://www.snapchat.com/add/alainzoouae</string>
+    <string name="instagram_url" translatable="false">https://www.instagram.com/alainzoouae/</string>
+    <string name="youtube_url" translatable="false">https://www.youtube.com/user/AlAinZooUAE</string>
+    <string name="nav_login"><u>Login</u></string>
+    <string name="nav_signup"><u>Register</u></string>
+    <string name="validation_enter_username">Please enter username</string>
+    <string name="validation_enter_valid_username">Please enter a valid username</string>
+    <string name="validation_enter_password">Please enter password</string>
+    <string name="application_details">Enquiry Details</string>
+    <string name="submit">Submit</string>
+    <string name="apply_form_title">Please fill the below form %s by giving us the details below</string>
+    <string name="apply_form_responce">Apply for %s </string>
+    <string name="apply">Enquiry</string>
+    <string name="enquire_for_service">Enquire for Service</string>
+    <string name="okay">Okay</string>
+    <string name="send_invitation_via_email">Send Invitation via Email</string>
+    <string name="enter_the_email_id_of_the_family">Enter the email ID of the family member you would like to invite. An invitation link will be sent to the email ID.</string>
+    <string name="send_invitation">Send Invitation</string>
+    <string name="enter_email_id">Enter Email ID</string>
+    <string name="aed">AED</string>
+
+    <string name="error_mandetory">Please enter all the mandatory fields</string>
+    <string name="error_name">Please enter a name</string>
+    <string name="error_email">Please enter an email address</string>
+    <string name="error_email_valid">Please enter a valid email address</string>
+    <string name="error_comment">Please enter an comment</string>
+    <string name="error_category">Please select category</string>
+    <string name="success_feedback">Your feedback sent successfully</string>
+
+    <string name="error_yourname">Please enter your name</string>
+    <string name="error_phone_number">Please enter a phone number</string>
+    <string name="error_service_date">Please select date of service</string>
+    <string name="error_service_time">Please select time of service</string>
+    <string name="error_password">Please enter a password</string>
+    <string name="error_date_of_birth">Please slect Date of Birth</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="validation_confirm_password_not_match">Password and confirmation password don\'t match.</string>
+    <string name="error_confirm_password">Please enter a confirm password</string>
+    <string name="username">Username</string>
+    <string name="mobile_number_or_email_address">Mobile number or Email</string>
+    <string name="email_address">Email Address</string>
+    <string name="keep_me_logged_in">Remember me</string>
+    <string name="see_details">See Details</string>
+    <string name="select_date">Select Date</string>
+    <string name="step_select_date">Step 1: Select Date</string>
+    <string name="step_plan_name">Step 2 : Plan Name</string>
+    <string name="Step_3">Step 3</string>
+    <string name="url_buy_tickets">https://online.alainzoo.ae/En/Booking.aspx</string>
+
+    <string name="share">Share</string>
+
+
+    <string name="str_plane_noanimal">No Animals Selected</string>
+    <string name="str_plane_nowhatsnew">"No New Activities Selected </string>
+    <string name="str_plane_noexperiance">No Experiences Selected</string>
+    <string name="str_plane_noattractions">No Attractions Selected</string>
+    <string name="selected_animals">Selected Animals</string>
+    <string name="what_s_new">What’s New</string>
+    <string name="selected_experience">Selected Experience</string>
+    <string name="selected_attractions">Selected Attractions</string>
+    <string name="select_the_plan_your_visit">Select the %s you would like to add to your visit</string>
+    <string name="pls_select_date">Please select a visit date</string>
+    <string name="share_image">Share Image</string>
+    <string name="parking">Parking</string>
+    <string name="save_my_parking">Save my Parking</string>
+    <string name="goto_parking">Goto</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_you_want_to_delete_your_current_parking_location">Are you sure you want to delete your current parking location ?</string>
+    <string name="yes">Yes</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="sos_request_message">Are you sure want to Send SOS request to our medical team?</string>
+    <string name="hello">Hello,</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_want_to_logout">Are you sure want to logout?</string>
+    <string name="requesting_shuttle">Requesting Shuttle</string>
+    <string name="please_wait">Please wait …</string>
+    <string name="request_now">Request Now</string>
+    <string name="shuttle_service">Shuttle service</string>
+    <string name="the_shuttle_will_arrive_in">The Shuttle will arrive shortly</string>
+    <string name="confirm">Confirm</string>
+    <string name="i_have_it"><u>Submit</u></string>
+    <string name="make_sure_that_you_have_purchase_shuttle_service_at_the_main_gate">Make sure that you have purchase shuttle service at the main gate</string>
+    <string name="plan_name">Plan Name</string>
+    <string name="please_enter_planname">Please enter Plan name</string>
+    <string name="star" translatable="false">star</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_family_member">Add Family member</string>
+    <string name="error_valid_phone_number">Please enter a valid phone number</string>
+    <string name="no">No</string>
+    <string name="no_location_available">No Location available</string>
+    <string name="map_style">mapbox://styles/mohloay/cjcyvrduu01s42so66rg7u40n</string>
+    <string name="visit_day">Visit Day</string>
+    <string name="my_plan">My Plan</string>
+    <string name="rate_now">Rate Now</string>
+    <string name="rating_success">You have rated this experience successfully</string>
+    <string name="i_don_t_have_it">Enquire for Shuttle Service</string>
+    <string name="please_enter_shuttle_code">Please enter Shuttle code</string>
+    <string name="please_enter_valid_code">Please enter valid code.</string>
+    <string name="shuttle_code">Enter Shuttle Code</string>
+    <string name="none">None</string>
+    <string name="avatar">Avatar</string>
+    <string name="this_request_requires_to_be_logged_in">This request requires to be logged in</string>
+    <string name="success_form">You have applied for this Service Successfully</string>
+    <string name="zoo_closed">ZOO CLOSED</string>
+    <string name="back_tomorrow">Back tomorrow</string>
+    <string name="login_required">Login Required</string>
+    <string name="login_to_apply_plan">Please login to your account to be able to apply for this plan</string>
+    <string name="login_to_rate">Please login to your account to be able to rate this experience</string>
+    <string name="sos_login_required">This request requires to be logged in</string>
+    <string name="plane_item_select_error">You need to add at least one item to your plan</string>
+    <string name="rating_error">Please select any number of stars for rating</string>
+    <string name="show_animals">Show Animals</string>
+    <string name="show_experience">Show Experience</string>
+    <string name="show_transport">Show Transport</string>
+    <string name="show_restaurant">Show Venues</string>
+    <string name="feeding_opening_hours">Feeding Opening Hours</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="reset_your_password">Forget your password</string>
+    <string name="treasure_hunt">Treasure hunt</string>
+    <string name="select_you_favourite_avatar">Select you favourite avatar!</string>
+    <string name="please_select_an_avatar">Please select an avatar</string>
+    <string name="profile_update_success">Profile Updated Successfully</string>
+    <string name="rank">Rank</string>
+    <string name="start_navigation">Start Navigation</string>
+    <string name="date">Date</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="change_plan">Change Plan</string>
+    <string name="alert_plane_confirm_delete">If you want to change your plan, the current one will be deleted</string>
+    <string name="close">Close</string>
+    <string name="sos_success">Request for sos is submitted successfully</string>
+    <string name="take_me_there">Take me there</string>
+    <string name="see_more_info">See more Info</string>
+
+    <string name="closed">Closed</string>
+    <string name="happening_now">Happening Now</string>
+    <string name="start_within">Start within</string>
+    <string name="mins">mins</string>
+    <string name="Mins">Mins</string>
+    <string name="hours">hour</string>
+
+
+    <string name="tutorial1">You can use SOS button for Emergency cases in the Zoo</string>
+    <string name="tutorial2">Side Menu, Where you can navigate between all of the additional features and Screens in the application, in adition to login/logout and registration.</string>
+    <string name="tutorial3">Home is considered the main screen all over the app, you can see opening hours, attractions, notifications and more exciting activities in the zoo.</string>
+    <string name="tutorial4">Explore the Zoo is where you can see a map view of all of the Zoo and see what it around you, in adition to navigating between all of the animals and attractions available</string>
+    <string name="tutorial5">Plan your visit is the place where you can customize a plan for your visit or select one of our great plans specifically created for you.</string>
+    <string name="tutorial6">You can always buy your tickets online from Buy tickets tap.
+</string>
+    <string name="tutorial7">When you press on any image in the main screen it will take you to the contents of that screen and more details.</string>
+    <string name="celebrities">Celebrities</string>
+    <string name="to">To</string>
+
+    <string name="hint_mobile_no">05xxxxxxxx</string>
+    <string name="hint_register_mobile_no">+971xxxxxxxxx</string>
+    <string name="dialog_shuttle_service_info_message">For more information go to shuttle services</string>
+    <string name="you_can_type_anything_in_the_search_box_above_to_start_seeing_respected_results">You Can Type anything in the search box above to start seeing respected results</string>
+    <string name="get_stated">Get Started</string>
+    <string name="duration">Duration</string>
+    <string name="hrs">Hrs</string>
+    <string name="rate_already_sent">Your rate is already sent</string>
+    <string name="suggested_tickets">Suggested Tickets</string>
+    <string name="for_adult">For Adult</string>
+    <string name="for_child">For Child</string>
+    <string name="come_back_at_11_00_am_to_find_the_zoo_hidden_treasure">Come back at %s to find the Zoo Hidden Treasure</string>
+    <string name="come_back_at_tomorrow_to_find_the_zoo_hidden_treasure">Mission accomplished we will notify you once the Treasure hunt is opened.</string>
+    <string name="qr_code_not_found">Oops! Wrong Clue</string>
+    <string name="add_activites">Add New Activities</string>
+    <string name="add_experinces">Add Experiences</string>
+    <string name="add_attractions">Add Attractions</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="relative">Relative</string>
+    <string name="error_clue_already_scanned">User already has points for this hint</string>
+    <string name="wow">Wow !</string>
+    <string name="you_found_the_clue">You found the Clue!</string>
+    <string name="scan">SCAN</string>
+    <string name="stay_tuned">Stay Tuned !</string>
+    <string name="location_notification">Location Notification</string>
+    <string name="no_plan_chosen">You have not Chosen a plan yet</string>
+    <string name="error_relative">Please enter relative</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="st_points">Points</string>
+    <string name="st_hints">Hints</string>
+    <string name="st_ranks">Ranks</string>
+    <string name="str_enter_oldpassword">Please enter your old password</string>
+    <string name="str_enter_newpassword">Please enter your new password</string>
+    <string name="str_enter_confirmpassword">Please enter confirm new password</string>
+    <string name="str_password_not_match">Password and confirm password don\'t match</string>
+    <string name="str_password_change_success">Your password has been changed successfully</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="show_recommended_plans">Show Recommended plans</string>
+    <string name="you_have_not_chosen_a_plan_yet">You have not Chosen a plan yet</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="need_to_mark_location_visited">Are need to mark this location as visited?</string>
+    <string name="oops_away_from_zoo">Oops! You seem to be far away from AlAin Zoo.</string>
+    <string name="share_description">You can earn points by :\n \u2022  Sharing the application \n
+\u2022  Sharing Experiences, Visitor services, or animals ....\n
+\u2022  View Games Provided by Zoo on Google play or App Store \n
+\u2022  Plan a visit\n
+\u2022  Login for the first time </string>
+    <string name="add">Add</string>
+    <string name="navigate_to_next_point">Would like to navigate to the %s ?</string>
+    <string name="no_route_found">No Routes Found</string>
+    <string name="detail_not_available">Details are not available for this item.</string>
+    <string name="error_alreadyhave_palan">You have already planned for a visit, would you like to change it?</string>
+</resources>

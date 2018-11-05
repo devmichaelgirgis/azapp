@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_form_response_tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="@dimen/_15ssp"
+        app:fontFamily="@string/avenir_next_bold"
+        tools:text="Applied for Service" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_form_response_tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@color/slate_grey_two"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="@string/avenir_next_regular"
+        tools:text="Thanks for applying for Al Maha Royal service. We have sent confirmation email to your email ID." />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/white_line_dialog" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_form_response_tvOkay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/okay"
+        android:textColor="@color/brownish_orange"
+        android:textSize="@dimen/_13ssp"
+        app:fontFamily="@string/avenir_next_medium" />
+
+</LinearLayout>

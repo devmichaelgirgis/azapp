@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_plntype_ivPlaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:background="@color/gray_item"
+                android:padding="@dimen/_20sdp"
+                android:scaleType="centerInside"
+                android:tint="@color/colorplaceholder"
+                app:srcCompat="@drawable/logo_splash" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/row_plntype_ivMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fram_experinces" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_plntype_tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_checkbox_button"
+                android:gravity="center"
+                android:lines="2"
+                android:paddingBottom="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:textColor="@color/colorAddAnimalCheckedText"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@string/avenir_next_demi_bold"
+                tools:text="Asian Lion" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.exceedgulf.alainzoo.views.CustomCheckBox
+                    android:id="@+id/row_plntype_cbname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_checkbox_button"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@color/colorAddAnimalCheckedText" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/row_plntype_ivInfo"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_3sdp"
+                    app:srcCompat="@drawable/ic_info" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

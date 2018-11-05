@@ -1,0 +1,28 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_notification_tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/_5sdp"
+            android:padding="@dimen/_16sdp"
+            android:textAlignment="viewStart"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_14ssp"
+            app:fontFamily="@string/avenir_next_medium"
+            tools:text="Hello" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_item" />
+        <!--android:drawableEnd="@drawable/ic_noti_next"-->
+    </LinearLayout>
+</layout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/cool_blue</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">@android:color/white</color>
+
+    <color name="cool_blue">#4dafc0</color>
+    <color name="slate_grey">#565560</color>
+    <color name="dirt_brown">#81522e</color>
+    <color name="pale_grey">#eaebed</color>
+    <color name="snot">#b4c90e</color>
+    <color name="cool_grey">#b6b6b7</color>
+    <color name="cool_grey_two">#96959f</color>
+    <color name="gray_item">#eaeaea</color>
+    <color name="yellow_orange">#eea700</color>
+    <color name="light_grey_blue">#a4d7db</color>
+    <color name="slate_grey_two">#565563</color>
+    <color name="camo">#789048</color>
+    <color name="medium_grey">#7d7d74</color>
+    <color name="black_71">#b6000000</color>
+    <color name="dark_blue_grey">#213259</color>
+    <color name="warm_grey">#787878</color>
+    <color name="brownish_grey">#6c6c6c</color>
+    <color name="reddish">#d13431</color>
+    <color name="reddish_filter_selection">#b82d2a</color>
+    <color name="very_light_brown">#dac293</color>
+    <color name="slide_back_color">#efefef</color>
+    <color name="brownish_grey_two">#7b6c64</color>
+    <color name="rate_dark">#dadada</color>
+    <color name="rating_no_gray">#e9e9e9</color>
+    <color name="tomato">#e95646</color>
+    <color name="cool_blue_two">#43a3b4</color>
+    <color name="golden_yellow">#f6cc1f</color>
+    <color name="light_grey_green">#c3e088</color>
+    <color name="military_green">#6d8342</color>
+    <color name="happening_now_line">#eceaea</color>
+    <color name="brownish_orange">#bf6718</color>
+    <color name="charcoal_grey">#403f49</color>
+    <color name="white_line_dialog">#dfdfdf</color>
+    <color name="brownish_grey_three">#796c65</color>
+    <color name="dark_beige">#a79166</color>
+    <color name="toupe">#c4aa77</color>
+    <color name="brownish_grey_four">#676767</color>
+    <color name="dull_brown">#86724b</color>
+    <color name="warm_grey_two">#7d7d7d</color>
+    <color name="steel">#8e8e93</color>
+    <color name="light_eggplant">#803c8f</color>
+    <color name="white_badge_text">#d8d8d8</color>
+    <color name="warm_grey_three">#999999</color>
+    <color name="white_leaderboard_bg">#f1f1f1</color>
+    <color name="yellow_orange_two">#ffb600</color>
+    <color name="grape">#43255e</color>
+    <color name="colorcontactusdivider">#e2e2e2</color>
+    <color name="colorMyParkBtn">#633341</color>
+    <color name="colorNavHello">#e44f41</color>
+    <color name="colorSetting">#16b1c3</color>
+    <color name="colorSettingDivider">#e5e5e5</color>
+    <color name="colorSettingHighlight">#a09fad</color>
+    <color name="colorBgSeeInfo">#6a6565</color>
+
+    <color name="colorNotificationBG">#f6f6f6</color>
+    <color name="colorSearchTypeBG">#86724b</color>
+    <color name="colorSearchEdtBG">#c4aa77</color>
+    <color name="light_grey">#929292</color>
+    <color name="colorFeedbackEdtBG">#cfcfcf</color>
+    <color name="colorFeedbackEdtBorder">#f5f5f5</color>
+    <color name="colorFAQDivider">#F1F1F1</color>
+    <color name="coloropeninghr">#a8a8a8</color>
+    <color name="coloropeninghrlist">#a8a8a8</color>
+    <color name="colorAddPlan">#ffd400</color>
+    <color name="colorTextHint">#c9c9c9</color>
+    <color name="colorPlanAdd">#ED9600</color>
+    <color name="colorAddAnimalText">#77767f</color>
+    <color name="colorAddAnimalCheckedText">#6d6d6d</color>
+    <color name="colorexplorezoofilter">#ffb6b4</color>
+    <color name="colorplanrecom">#83000000</color>
+    <color name="colorplaceholder">#979797</color>
+    <color name="colorshuttleborder">#d5d5d5</color>
+    <color name="colorshuttleselected">#e6e4e4</color>
+    <color name="colorshuttlerequestunselected">#b8b8b8</color>
+    <color name="colorchangepss">#dbd9d9</color>
+    <color name="colorTresurhunt">#6a2f41</color>
+    <color name="colorTresurChecked">#84bc00</color>
+    <color name="colorAvtarDoalog">#b3000000</color>
+    <color name="colorSzdcl">#6D2079</color>
+    <color name="dialog_black">#80000000</color>
+    <color name="colorTypeBlueText">#80FFFF</color>
+    <color name="colorTypeBlueDivider">#2C7D9A</color>
+    <color name="btnSheetTitle">#99ADBB</color>
+</resources>
+
+
+
+

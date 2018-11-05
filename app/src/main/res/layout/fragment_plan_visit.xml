@@ -1,0 +1,143 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.PlanVisitFragment">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_30sdp">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/we_ve_come_up_with_some_tried_and_test_plans_for_our_visitors"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_16ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/these_plans_ensure_you_make_the_most_out_of_your_visit"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="@dimen/_11ssp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recommended_plans"
+                    android:textColor="@color/slate_grey"
+                    android:textSize="@dimen/_16ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+                    android:id="@+id/frPlanVisit_rvPlans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:nestedScrollingEnabled="false" />
+
+                <LinearLayout
+                    android:id="@+id/frPlanVisit_llAddPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/ic_plan_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/bg_plan_add"
+                        android:padding="@dimen/_10sdp"
+                        android:textColor="@color/white"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/ic_add" />
+
+                    <com.exceedgulf.alainzoo.views.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/plan_your_visit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15ssp"
+                        app:fontFamily="@string/avenir_next_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frMyPlanVisit_llMyPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/ic_plan_btn"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.exceedgulf.alainzoo.views.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="@string/my_plan"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15ssp"
+                        app:fontFamily="@string/avenir_next_regular"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/frPlanVisit_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:minHeight="@dimen/_260sdp"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20ssp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/cool_blue"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

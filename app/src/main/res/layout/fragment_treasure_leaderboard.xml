@@ -1,0 +1,158 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.exceedgulf.alainzoo.fragments.TreasureLeaderBoardFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/frTresureLeaderboard_rvLeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/frTresureLeaderboard_llbotom"
+                android:layout_marginBottom="@dimen/_minus19sdp"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/_16sdp"
+                android:paddingTop="@dimen/_24sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/frTresureLeaderboard_llbotom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/application_name"
+                    android:scaleType="fitXY"
+                    android:tint="@color/colorTresurhunt"
+                    app:srcCompat="@drawable/ic_leaderboard_bottom" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_minus1sdp"
+                    android:background="@color/colorTresurhunt"
+                    android:paddingBottom="@dimen/_8ssp">
+
+
+                    <com.exceedgulf.alainzoo.views.RoundedImageView
+                        android:id="@+id/frTresureLeaderboard_ivuserprofilepic"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:civ_border="true"
+                        app:civ_border_color="@color/white_badge_text"
+                        app:civ_border_width="@dimen/_2sdp"
+                        app:srcCompat="@mipmap/ic_launcher_round" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:id="@+id/frTresureLeaderboard_tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_regular"
+                            tools:layout_editor_absoluteY="19dp"
+                            tools:text="Mosab alawad" />
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:id="@+id/frTresureLeaderboard_tvPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_demi_bold"
+                            tools:text="512 Points" />
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:id="@+id/frTresureLeaderboard_tvClues"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_demi_bold"
+                            tools:text="15 Clues" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/frtre_leaderbod_llbotom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:id="@+id/frTresureLeaderboard_tvRank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="n/a"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_bold"
+                            tools:layout_editor_absoluteY="19dp" />
+
+                        <com.exceedgulf.alainzoo.views.CustomTextview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/st_ranks"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontFamily="@string/avenir_next_medium" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/fr_tres_tvEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/fetching_data"
+            android:textAlignment="center"
+            android:textDirection="anyRtl"
+            android:textSize="@dimen/_20sdp"
+            android:visibility="visible"
+            app:fontFamily="@string/cross_town" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/colorTresurhunt"
+            app:srcCompat="@drawable/header_main_home" />
+    </FrameLayout>
+</layout>

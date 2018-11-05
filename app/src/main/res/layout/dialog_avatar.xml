@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAvtarDoalog"
+    android:orientation="vertical">
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/select_you_favourite_avatar"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_26ssp"
+        app:fontFamily="@string/cross_town" />
+
+    <com.exceedgulf.alainzoo.custom.RecyclerViewEmptySupport
+        android:id="@+id/dialog_avatar_rvMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/dialog_background"
+        android:minHeight="@dimen/_200sdp" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_avatar_tvDone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/bg_red_corner_edt"
+        android:gravity="center"
+        android:text="@string/done"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:fontFamily="@string/avenir_next_demi_bold" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_avatar_tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/bg_shuttel_request_unselected"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        app:fontFamily="@string/avenir_next_demi_bold" />
+
+
+</LinearLayout>

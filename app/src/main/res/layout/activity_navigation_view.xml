@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mapbox.services.android.navigation.ui.v5.NavigationView
+            android:id="@+id/map_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:navigationLightTheme="@style/MyCustomTheme" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:minHeight="@dimen/_150sdp"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:text="You have arrived at"
+                android:textColor="@color/btnSheetTitle"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/act_nav_tvPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/black"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_22ssp"
+                app:autoSizeMaxTextSize="@dimen/_22ssp"
+                app:autoSizeMinTextSize="@dimen/_16ssp"
+                app:autoSizeStepGranularity="@dimen/_1ssp"
+                app:autoSizeTextType="uniform"
+                tools:text="Al Ain Safari" />
+
+
+            <TextView
+                android:id="@+id/act_nav_endNavigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:text="End Navigation"
+                android:textColor="@color/colorplaceholder"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</layout>

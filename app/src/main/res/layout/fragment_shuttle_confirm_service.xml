@@ -1,0 +1,96 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_70sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/frshuttelcon_tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/the_shuttle_will_arrive_in"
+                    android:textColor="@color/slate_grey_two"
+                    android:textSize="17sp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/frshuttelcon_tvTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/frshuttelcon_tvTitle"
+                    android:layout_toRightOf="@+id/frshuttelcon_tvTitle"
+                    android:text=" 5 Mins"
+                    android:textColor="@color/cool_blue"
+                    android:textSize="17sp"
+                    android:visibility="gone"
+                    app:fontFamily="@string/avenir_next_bold" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/frshuttelcon_ivMain"
+                android:layout_width="@dimen/_39sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:srcCompat="@drawable/ic_zarafa_cafe" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/frshuttelcon_tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_3sdp"
+                android:paddingStart="@dimen/_3sdp"
+                android:text="Monkey Highest"
+                android:textAllCaps="false"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_13ssp"
+                app:fontFamily="@string/avenir_next_regular" />
+
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/frshuttelcon_tvcancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@drawable/bg_red_corner_edt"
+                android:gravity="center"
+                android:text="@string/close"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:fontFamily="@string/avenir_next_demi_bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/cool_blue"
+            app:srcCompat="@drawable/header_main_home" />
+    </FrameLayout>
+</layout>

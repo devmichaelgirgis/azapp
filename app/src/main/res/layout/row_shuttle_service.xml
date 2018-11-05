@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/row_shuttle_llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shuttle_item_border"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/row_shuttle_ivMain"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:srcCompat="@drawable/ic_zarafa_cafe" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/row_shuttle_tvName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_3sdp"
+            android:paddingStart="@dimen/_3sdp"
+            android:text="Monkey Highest"
+            android:textAllCaps="false"
+            android:textColor="@color/slate_grey_two"
+            android:textSize="@dimen/_10ssp"
+            app:fontFamily="@string/avenir_next_regular" />
+    </LinearLayout>
+</layout>

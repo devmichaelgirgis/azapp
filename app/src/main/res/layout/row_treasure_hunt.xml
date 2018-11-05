@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/_40ssp"
+                    android:layout_height="@dimen/_36sdp"
+                    app:srcCompat="@drawable/ic_treasur_bag" />
+
+                <com.exceedgulf.alainzoo.views.CustomCheckBox
+                    android:id="@+id/row_tres_chMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:button="@drawable/selector_treasure_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_20sdp">
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/row_tres_tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hint Title"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/colorTresurhunt"
+                    android:textDirection="anyRtl"
+                    android:textSize="@dimen/_26ssp"
+
+                    app:fontFamily="@string/cross_town" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/row_tres_tvHintId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="Hint ID"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/slate_grey_two"
+                    android:textDirection="anyRtl"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/row_tres_tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam."
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/slate_grey_two"
+                    android:textDirection="anyRtl"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontFamily="@string/avenir_next_regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/_16sdp"
+            android:background="@color/white_line_dialog" />
+    </LinearLayout>
+</layout>

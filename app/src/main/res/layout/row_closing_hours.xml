@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/row_close_ivImage"
+            android:layout_width="@dimen/_56sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_closing_hours" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/_8sdp"
+            android:paddingStart="@dimen/_8sdp">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_close_tvtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/zoo_closed"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_28ssp"
+                app:fontFamily="@string/cross_town" />
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/row_close_tvsubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/back_tomorrow"
+                android:textColor="@color/slate_grey"
+                android:textSize="@dimen/_12ssp"
+                app:fontFamily="@string/avenir_next_medium" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_login_tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@color/charcoal_grey"
+        android:textSize="@dimen/_15ssp"
+        app:fontFamily="@string/avenir_next_bold"
+        android:text="@string/login_required" />
+
+    <com.exceedgulf.alainzoo.views.CustomTextview
+        android:id="@+id/dialog_login_tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_horizontal"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="@string/login_to_apply_plan"
+        android:textColor="@color/slate_grey_two"
+        android:textSize="@dimen/_15ssp"
+        app:fontFamily="@string/avenir_next_medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@color/white_line_dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/dialog_login_tvlogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/login"
+            android:textColor="@color/brownish_orange"
+            android:textSize="@dimen/_13ssp"
+            app:fontFamily="@string/avenir_next_medium" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white_line_dialog" />
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/dialog_login_tvcancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/cancel"
+            android:textColor="@color/brownish_orange"
+            android:textSize="@dimen/_13ssp"
+            app:fontFamily="@string/avenir_next_medium" />
+
+    </LinearLayout>
+
+</LinearLayout>

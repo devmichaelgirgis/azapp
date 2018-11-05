@@ -1,0 +1,147 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.exceedgulf.alainzoo.fragments.EducationDetailFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_24sdp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/fr_edude_ivplaceholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:background="@color/gray_item"
+                        android:padding="@dimen/_40sdp"
+                        android:scaleType="centerInside"
+                        android:tint="@color/colorplaceholder"
+                        app:srcCompat="@drawable/logo_splash" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/fr_edude_ivmain"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_190sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/fram_experinces" />
+
+                </FrameLayout>
+
+                <com.exceedgulf.alainzoo.views.CustomTextview
+                    android:id="@+id/fr_edude_tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    tools:text="Meet lion"
+                    android:textSize="@dimen/_20ssp"
+                    app:fontFamily="@string/cross_town" />
+
+                <!--<com.exceedgulf.alainzoo.views.CustomTextview-->
+                <!--android:id="@+id/fr_edude_tvdetail"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="@dimen/_16sdp"-->
+                <!--android:layout_marginStart="@dimen/_16sdp"-->
+                <!--android:layout_marginTop="@dimen/_8sdp"-->
+                <!--app:fontFamily="@string/avenir_next_regular"-->
+                <!--android:text="Nilo and her four adorable lion cubs are out exploring at Werribee Open Range Zoo. The best time to see the cubs will be early in the morning from 9:30am-10.30am. As with all young ones, the cubs will need their rest so we ask for visitors’ patience as they move into the dens to rest and feed."-->
+                <!--android:textColor="@color/slate_grey_two"-->
+                <!--android:textSize="@dimen/_11ssp"-->
+                <!--card_view:layout_constraintEnd_toEndOf="parent"-->
+                <!--card_view:layout_constraintStart_toStartOf="parent"-->
+                <!--card_view:layout_constraintTop_toBottomOf="@+id/row_edu_tvname" />-->
+
+                <WebView
+                    android:id="@+id/fr_edude_wvdetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:scrollbars="none"
+                    tools:ignore="WebViewLayout" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fr_edude_rvimages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:overScrollMode="never" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/fr_ser_det_btninqueryforservices"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/ic_rectangle_yellow"
+                    android:gravity="center"
+                    android:text="@string/enquire_for_service"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+
+                <com.exceedgulf.alainzoo.views.CustomButton
+                    android:id="@+id/fr_ser_det_btnSeeMoreDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/ic_rectangle_yellow"
+                    android:gravity="center"
+                    android:text="@string/see_more_info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    app:fontFamily="@string/avenir_next_medium" />
+            </LinearLayout>
+        </ScrollView>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/light_eggplant"
+            app:srcCompat="@drawable/header_main_home" />
+
+    </FrameLayout>
+</layout>

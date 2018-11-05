@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_8sdp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/rw_exp_see_ivplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_183sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:background="@color/gray_item"
+                android:padding="@dimen/_40sdp"
+                android:scaleType="centerInside"
+                android:tint="@color/colorplaceholder"
+                app:srcCompat="@drawable/logo_splash" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/rw_exp_see_ivmain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_183sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_183sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/fram_experinces" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.exceedgulf.alainzoo.views.CustomTextview
+                android:id="@+id/rw_exp_see_tvtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_toStartOf="@id/rw_exp_see_ivread_more"
+                android:paddingEnd="@dimen/_8sdp"
+                android:text="Budgie Feeding"
+                android:textAlignment="viewStart"
+                android:textDirection="anyRtl"
+                android:textSize="@dimen/_23sdp"
+                app:fontFamily="@string/cross_town" />
+
+            <com.exceedgulf.alainzoo.views.CustomButton
+                android:id="@+id/rw_exp_see_ivread_more"
+                android:layout_width="@dimen/_86sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/bg_read_yellow"
+                android:text="@string/read_more"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:fontFamily="@string/avenir_next_regular" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/rw_exp_see_rbratingbar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/yellow_orange"
+                android:rating="0"
+                android:scrollbarAlwaysDrawHorizontalTrack="false" />
+
+            <TextView
+                android:id="@+id/rw_exp_see_tvratingcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:background="@color/rating_no_gray"
+                android:gravity="center"
+                android:padding="@dimen/_3sdp"
+                android:text="0"
+                android:textColor="@color/slate_grey_two"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+
+        <com.exceedgulf.alainzoo.views.CustomTextview
+            android:id="@+id/rw_exp_see_tvdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingStart="@dimen/_16sdp"
+            android:text="Imagine an army of colourful budgies flying around you?! A small plate of seeds in your child’s tiny hand can results in an enormous amount of happiness! One of children and adults favourite experiences in our zoo!"
+            android:textSize="@dimen/_11ssp"
+            app:fontFamily="@string/avenir_next_regular" />
+    </LinearLayout>
+</layout>

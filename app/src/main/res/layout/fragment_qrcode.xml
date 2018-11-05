@@ -1,0 +1,46 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.exceedgulf.alainzoo.fragments.QRCodeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <SurfaceView
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/application_name"
+            android:scaleType="fitXY"
+            android:tint="@color/colorTresurhunt"
+            android:visibility="gone"
+            app:srcCompat="@drawable/header_main_home" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_71"
+            android:gravity="end">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/fr_qrcode_close"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:contentDescription="@string/application_name"
+                android:padding="@dimen/_5sdp"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/ic_close" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>
